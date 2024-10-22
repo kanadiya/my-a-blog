@@ -1,0 +1,117 @@
+@charset "utf-8";
+.bg{
+				position: fixed;
+				top: 0;
+				left: 0;
+				object-fit: cover;
+				width: 100vw;
+				height: 100vh;
+			}
+			.box{
+				width: 950px;
+				height: 450px;
+				box-shadow: 0 5px 15px rgba(0,0,0,8);
+				display: flex;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				box-sizing: border-box;
+				padding: 20px;
+				background: rgba(177, 227, 240,8);
+			}
+			.left{
+				width: 65%;
+			}
+			.left>img{
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			.right{
+				width: 35%;
+				height: 100%;
+				box-sizing: border-box;
+				padding: 0 20px;
+				backdrop-filter: blur(5px);
+			}
+			
+			.logtitle{
+				font-size: 40px;
+				text-align: center;
+				font-weight: bolder;
+				-webkit-background-clip: text;
+				background-image: linear-gradient(90deg, rgba(98, 201, 248,0.6),rgba(243, 111, 255, 0.6),rgba(247, 129, 129, 0.6),rgba(241, 239, 104, 0.6),rgba(117, 226, 84, 0.6),rgba(98, 201, 248,0.6));
+				background-size: 800%;
+				animation: gradient 30s infinite linear;
+				color: transparent;
+				line-height: 100px;
+				
+			}
+			
+			.inputItem{
+				height: 44px;
+				padding: 0;
+				padding-left: 8px;
+				border: none;
+				background: #fff;
+				outline: none;
+				width: 100%;
+				font-size: 16px;
+				margin-top: 20px;
+			}
+			.btn{
+				background: linear-gradient(to right,#65cbf7,#b3a5fc);
+				box-shadow: 0 5px 15px rgb(255,255,255,6);
+				color: #9c3493;
+				font-weight: bold;
+				border: none;
+				border-radius: 30px;
+				width: 100%;
+				height: 50px;
+				font-size: 18px;
+				display: block;
+				margin: auto;
+				margin-top: 30px;
+			}
+			button {
+			  position: relative;
+			  display: inline-block;
+			  padding: 15px 30px;
+			  background-color: #27022d;
+			  color: #fff;
+			  text-decoration: none;
+			  border-radius: 5px;
+			  transition: all .5s;
+			  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+			  overflow: hidden;
+			}
+			button:hover {
+			  background-color: #ff3c7f;
+			}
+			
+			button::before {
+			  content: '';
+			  position: absolute;
+			  left: -40%;
+			  top: 0;
+			  width: 20%;
+			  height: 100%;
+			  transform: skew(-45deg);
+			  background: linear-gradient(90deg, transparent, #fff, transparent);
+			}
+			button:hover::before {
+			  left: 120%;
+			  transition: all .5s;
+			}
+			.ykbt{
+				margin-top: 20px;
+				margin-left: 80%;
+				margin-top: 20px;
+				border: none;
+				background-color: transparent;
+			}
+			.ykbt:hover{
+			    color: rgb(64, 160, 216);
+			}

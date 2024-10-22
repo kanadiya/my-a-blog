@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+<header>
+  <!-- 左侧logo -->
+  <a href="#" class="logo">Logo</a>
+  <!-- 右侧导航 -->
+  <ul>
+    <li><a href="#" class="active">主页</a></li>
+    <li><a href="#">个人简介</a></li>
+    <li><a href="#">工作</a></li>
+    <li><a href="#">了解更多</a></li>
+  </ul>
+</header>
+
+<section>
+  <img src="../images/stars.png" class="stars" alt="">
+  <img src="../images/moon.png" class="moon" alt="">
+  <img src="../images/mountains_behind.png" class="behind" alt="">
+  <h2 class="txt">kanadiya's a blog</h2>
+
+  <img src="../images/mountains_front.png" class="front" alt="">
+</section>
+  
+  <div class="content">
+    <h2 style="text-align: center;">Welcome to my blog</h2>
+	
+	
+	<div class="box1">
+    <div class="card">
+        <div class="front ">
+            <p>主页</p>
+        </div>
+        <div class="back">
+            <div class="hero threeD">
+                <h2>主页</h2>
+                <div>
+                    <span>主页</span>
+                </div>
+            </div>
+				<div class="desc threeD">
+               <a href="home.html" style="text-decoration: none; color: #fff;">点击返回主页</a>
+			</div>
+        </div>
+    </div>
+	
+	
+	
+	<div class="carda">
+	    <div class="fronta">
+	        <p>个人简介</p>
+	    </div>
+	    <div class="backa">
+	        <div class="heroa threeDa">
+	            <h2>个人简介</h2>
+	            <div>
+	                <span>个人简介</span>
+	            </div>
+	        </div>
+				<div class="desca threeDa">
+	           <a href="home.html" style="text-decoration: none; color: #fff;">点击进入个人简介</a>
+			</div>
+	    </div>
+	</div>
+	
+	
+	<div class="cardb">
+	    <div class="frontb ">
+	        <p>个人创作</p>
+	    </div>
+	    <div class="backb">
+	        <div class="herob threeDb">
+	            <h2>个人创作</h2>
+	            <div>
+	                <span>个人创作</span>
+	            </div>
+	        </div>
+				<div class="descb threeDb">
+	           <a href="home.html" style="text-decoration: none; color: #fff;">点击进入创作</a>
+			</div>
+	    </div>
+	</div>
+	
+	
+	<div class="cardc">
+	    <div class="frontc ">
+	        <p>了解更多</p>
+	    </div>
+	    <div class="backc">
+	        <div class="heroc threeDc">
+	            <h2>了解更多</h2>
+	            <div>
+	                <span>更多信息</span>
+	            </div>
+	        </div>
+				<div class="descc threeDc">
+	           <a href="home.html" style="text-decoration: none; color: #fff;">点击进入了解更多</a>
+			</div>
+	    </div>
+	</div>
+
+  </div>
+
+  <script>
+    // 找对象
+    const stars = document.querySelector('.stars')
+    const moon = document.querySelector('.moon')
+    const behind = document.querySelector('.behind')
+    const front = document.querySelector('.front')
+    const txt = document.querySelector('.txt')
+    const btn = document.querySelector('.btn')
+    const header = document.querySelector('header')
+
+    window.addEventListener('scroll', function () {
+      let value = window.scrollY
+      stars.style.left = value * 0.25 + 'px'
+      moon.style.top = value * 1.05 + 'px'
+      behind.style.top = value * 0.5 + 'px'
+      front.style.top = value * 0 + 'px'
+      txt.style.marginRight = value * 4 + 'px'
+      txt.style.marginTop = value * 1.5 + 'px'
+      btn.style.marginTop = value * 1.5 + 'px'
+      header.style.top = value * 0.5 + 'px'
+    })
+
+
+  </script>
+</body>
+
+</html>
